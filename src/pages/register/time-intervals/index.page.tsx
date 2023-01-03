@@ -15,6 +15,7 @@ import { api } from '../../../lib/axios'
 import { convertTimeStringToMinutes } from '../../../utils/convert-time-string-to-minutes'
 import { getWeekDays } from '../../../utils/get-week-days'
 import { Container, Header } from '../styles'
+import { NextSeo } from 'next-seo'
 
 import {
   FormError,
@@ -111,6 +112,7 @@ export default function TimeIntervals() {
 
   return (
     <>
+      <NextSeo title="Selecione sua disponibilidade | Ignite Call" noindex />
       <Container>
         <Header>
           <Heading as="strong">Quase lá</Heading>
